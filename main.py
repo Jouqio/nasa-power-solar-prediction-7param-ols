@@ -16,7 +16,7 @@ VERSI FINAL — mencakup seluruh uji statistik:
   x3 = WS10M              (Kecepatan angin 10m, m/s)
   x4 = PS                 (Tekanan permukaan, kPa)
   x5 = CLOUD_AMT          (Tutupan awan, %)
-  x6 = PRECTOTCORR        (Curah hujan, mm/hari)
+  x6 = IMERG_PRECTOT        (Curah hujan, mm/hari)
   x7 = ALLSKY_SFC_SW_DNI  (Irradiansi langsung, kWh/m²/hari)
 
 Target Y: Estimasi daya panel surya (kWh/m²/hari)
@@ -50,7 +50,7 @@ df_raw.columns = ['PARAMETER', 'YEAR', 'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
 
 MONTHS        = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']
 PARAMS_NEEDED = ['ALLSKY_SFC_SW_DWN', 'T2M', 'WS10M', 'PS', 'CLOUD_AMT',
-                 'PRECTOTCORR', 'ALLSKY_SFC_SW_DNI']
+                 'IMERG_PRECTOT', 'ALLSKY_SFC_SW_DNI']
 
 def pivot_param(df, param_name):
     sub  = df[df['PARAMETER'] == param_name][['YEAR'] + MONTHS].copy()
@@ -90,7 +90,7 @@ x2 = df_merged['T2M'].values
 x3 = df_merged['WS10M'].values
 x4 = df_merged['PS'].values
 x5 = df_merged['CLOUD_AMT'].values
-x6 = df_merged['PRECTOTCORR'].values
+x6 = df_merged['IMERG_PRECTOT'].values
 x7 = df_merged['ALLSKY_SFC_SW_DNI'].values
 
 Y = x1 * eta_STC * (1 - beta_T * (x2 - T_STC))
@@ -102,9 +102,9 @@ n = len(Y)
 X = np.column_stack([np.ones(n), x1, x2, x3, x4, x5, x6, x7])
 
 feature_names = ['Intercept', 'x1(ALLSKY_DWN)', 'x2(T2M)', 'x3(WS10M)',
-                 'x4(PS)', 'x5(CLOUD_AMT)', 'x6(PRECTOT)', 'x7(ALLSKY_DNI)']
+                 'x4(PS)', 'x5(CLOUD_AMT)', 'x6(IMERG_PRECTOT)', 'x7(ALLSKY_DNI)']
 var_names     = ['x1(ALLSKY_DWN)', 'x2(T2M)', 'x3(WS10M)',
-                 'x4(PS)', 'x5(CLOUD_AMT)', 'x6(PRECTOT)', 'x7(ALLSKY_DNI)']
+                 'x4(PS)', 'x5(CLOUD_AMT)', 'x6(IMERG_PRECTOT)', 'x7(ALLSKY_DNI)']
 
 # ============================================================
 # 4. TRAIN/TEST SPLIT 80:20  → 106 train | 26 test
