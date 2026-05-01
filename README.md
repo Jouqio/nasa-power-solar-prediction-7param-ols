@@ -14,7 +14,7 @@ Model ini dikembangkan sebagai bagian dari analisis akademis yang mencakup:
 
 - Formulasi sistem persamaan linier dalam bentuk matriks **Xᵀ · X · β = Xᵀ · Y**
 - Estimasi koefisien OLS melalui **Normal Equations**: `β̂ = (XᵀX)⁻¹ XᵀY`
-- Evaluasi statistik komprehensif: uji signifikansi, AIC/BIC, VIF, autokorelasi, dan normalitas residual hi
+- Evaluasi statistik komprehensif: uji signifikansi, AIC/BIC, VIF, autokorelasi, dan normalitas residual 
 
 ---
 
