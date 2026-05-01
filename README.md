@@ -2,7 +2,7 @@
 
 **Lokasi Studi:** Bontang, Kalimantan Timur (0.1333°N, 117.50°E)  
 **Periode Data:** Januari 2015 – Desember 2025 (n = 132 bulan)  
-**Metode Utama:** Ordinary Least Squares (OLS) via Normal Equations yey
+**Metode Utama:** Ordinary Least Squares (OLS) via Normal Equations ypa
 
 ---
 
