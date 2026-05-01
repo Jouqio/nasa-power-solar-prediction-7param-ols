@@ -24,6 +24,7 @@ Model ini dikembangkan sebagai bagian dari analisis akademis yang mencakup:
 project-root/
 ├── main.py                                          # Skrip analisis utama
 ├── POWER_Point_Monthly_20150101_20251231_...csv     # Dataset NASA POWER
+├── README.md                                        # formatting and content structure
 ├── requirements.txt                                 # Dependensi Python
 ├── .gitignore
 └── outputs/                                         # Hasil analisis (di-generate otomatis)
