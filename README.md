@@ -23,6 +23,29 @@ Implementasi model **OLS (Normal Equations)** untuk memprediksi daya panel surya
 
 ---
 
+## Struktur Proyek
+
+```
+project-root/
+├── main.py                     # Skrip analisis utama
+├── POWER_Point_Monthly_...csv  # Dataset NASA POWER
+├── requirements.txt
+├── LICENSE
+├── CITATION.cff
+└── outputs/                    # Di-generate otomatis setelah menjalankan main.py
+    ├── Gambar1_Panel_Utama_4in1.png
+    ├── Gambar2_Autokorelasi_Diagnostik.png
+    ├── Gambar3_AIC_BIC_Comparison.png
+    ├── Gambar4_BoxCox_Normalitas.png
+    ├── Gambar5_Residual_Diagnostic.png
+    ├── Gambar6_Heatmap_Korelasi.png
+    ├── Gambar7_Pipeline_Flowchart.png
+    ├── Gambar8_ML_Comparison.png
+    └── hasil_analisis_lengkap.txt
+```
+
+---
+
 ## Cara Pakai
 
 ```bash
