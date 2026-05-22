@@ -51,4 +51,4 @@ Bontang PV OLS | NASA POWER 2015-2025 | n=132
   Mean R²   : 0.99999501 ± 0.00000252
   Mean MAPE : 0.011481% ± 0.004908%
 
-  .
+  
