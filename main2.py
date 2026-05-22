@@ -1025,6 +1025,8 @@ for o in outputs_ext:
     print(f"  {o}")
 print(f"{'='*70}")
 
+# RINGKASAN KEY FINDINGS (untuk publikasi)
+
 key_findings = [
     "1. Breusch-Pagan test menunjukkan adanya heteroskedastisitas (p<0.001), yang dikonfirmasi oleh White test (p<0.001).",
     "2. Bandwidth Newey-West optimal adalah 4 lags, dengan inflasi SE signifikan pada GHI (1.35x) dan T2M (1.20x), namun koefisien tetap sangat signifikan setelah koreksi HAC.",
@@ -1035,4 +1037,3 @@ key_findings = [
 print("\nKEY FINDINGS:")
 for k in key_findings:
     print(f"  {k}")
-    
